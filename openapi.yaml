@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "legacy-batch"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8118"
+paths:
+  "/legacy-batchs":
+    get:
+      summary: "List legacy-batchs"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create legacy-batch"
+      responses:
+        "200":
+          description: OK
+  "/legacy-batchs/{id}":
+    get:
+      summary: "Get legacy-batch by ID"
+      responses:
+        "200":
+          description: OK
